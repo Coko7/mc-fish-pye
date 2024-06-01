@@ -1,0 +1,13 @@
+{
+  "pack": {
+    "pack_format": 32,
+    "description": "Designed for futuristic fishing! Made for 1.20.6"
+  },
+  "language": {
+    "en_db": {
+      "name": "Bionic Fisher Lang",
+      "region": "Fisher World",
+      "bidirectional": false
+    }
+  }
+}
