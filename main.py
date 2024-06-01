@@ -6,23 +6,28 @@ import keyboard
 
 
 def check_catch(x_start, x_end, y_start, y_end):
+    # Take screenshot and crop the region of interest
     screenshot = np.array(pyautogui.screenshot())
-
-    # Crop the region of interest
     roi = screenshot[y_start:y_end, x_start:x_end]
 
-    # Convert the region of interest to grayscale
+    # Convert to grayscale image
     grayscale_roi = cv2.cvtColor(roi, cv2.COLOR_BGR2GRAY)
 
-    # Define the threshold for detecting black pixels
+    # Define threshold for detecting black pixels
     threshold = 10  # Adjust this value as needed
 
-    # Check if there is a black square area
+    # Set click position to 0,0 otherwise we get weird camera movements in game
+    click_pos = (0, 0)
+
+    # Check if ROI is composed of black pixels
     if np.mean(grayscale_roi) < threshold:
-        x, y = pyautogui.position()
-        pyautogui.rightClick(0, 0)
+        # Reel in the fish (or treasure!)
+        pyautogui.rightClick(click_pos)
+        # Sleep time must be greater than MC subtitle fade time
         time.sleep(3.5)
-        pyautogui.rightClick(0, 0)
+        # Cast rod again
+        pyautogui.rightClick(click_pos)
+
         return 1
 
     return 0
@@ -65,6 +70,7 @@ while True:
         catches = catches + 1
         print("Catch:", catches)
 
+    # Stop script when 'p' is pressed
     if keyboard.is_pressed("p"):
         print("IT'S G-OVER")
         print("You caught:", catches)
