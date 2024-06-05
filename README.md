@@ -1,6 +1,8 @@
-# 🎣 mc-fishpy
+# 🎣 mc-fish-pye
 
 AFK auto-fishing script for Minecraft using Python and OpenCV.
+
+So that you can bake many [fish p*y*es](https://en.wikipedia.org/wiki/Fish_pie) with all the fish you get :)
 
 ## ⚙️ Setup
 
