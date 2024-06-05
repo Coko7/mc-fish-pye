@@ -12,7 +12,7 @@ To use this script, you will need to:
   - For `setup.py`: [pynput](https://pypi.org/project/pynput/)
 - Run `setup.py` and perform two clicks to define the region of interest
 - Update `config.json` to use the newly defined ROI
-- Download the [resource pack](./mc-fishpy-pack) and import it
+- Download the [resource pack](./resource-pack/) and import it (Feel free to zip it if you want)
 - In game, select the resource pack and then change your in-game language to "Bionic Fisher Lang"
 - Make sure you have the [subtitles](https://minecraft.wiki/w/Subtitles) enabled in **Accessibility Settings**
 - Also make sure you do not have **Friendly Creatures** sounds muted in your **Sound Settings**
