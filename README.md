@@ -9,6 +9,7 @@ To use this script, you will need to:
 - Download the [resource pack](./mc-fishpy-pack) and import it
 - In game, select the resource pack and then change your in-game language to "Bionic Fisher Lang"
 - Make sure you have the [subtitles](https://minecraft.wiki/w/Subtitles) enabled in **Accessibility Settings**
+- Also make sure you do not have **Friendly Creatures** sounds muted in your **Sound Settings**
 - *Optionally: you can disable the transparency of the subtitle box for better results*
 
 ## 📖 Usage
