@@ -1,0 +1,19 @@
+{
+    "startTimer": 5,
+    "detection": {
+        "roi": {
+            "x1": 1000,
+            "x2": 2000,
+            "y1": 1000,
+            "y2": 2000
+        },
+        "threshold": 10
+    },
+    "actions": {
+        "clickPos": {
+            "x": 0,
+            "y": 0
+        },
+        "clickDelay": 3.5
+    }
+}
