@@ -21,17 +21,21 @@ def check_catch(x_start, x_end, y_start, y_end):
 
     # Check if ROI is composed of black pixels
     if np.mean(grayscale_roi) < threshold:
-        # Reel in the fish (or treasure!)
-        pyautogui.rightClick(click_pos)
-        # Sleep time must be greater than MC subtitle fade time
-        time.sleep(3.5)
-        # Cast rod again
-        pyautogui.rightClick(click_pos)
+        pyautogui.rightClick(click_pos) # Reel in the fish (or treasure!)
+        time.sleep(0.5)
+        pyautogui.rightClick(click_pos) # Cast rod again
 
         return 1
 
     return 0
     # cv2.imwrite("test.png", grayscale_roi)
+
+def start_init_timer(start_from):
+    for count in range(start_from, 0, -1):
+        print("{}...".format(count))
+        time.sleep(1)
+
+    print("GO! GO! GO! GOOOOOO!!!")
 
 
 # Get screen dimensions
@@ -51,17 +55,7 @@ laptop_screen_roi = {'x1': 1725, 'x2': 1745, 'y1': 930, 'y2': 985}
 
 roi = laptop_screen_roi
 
-print("5...")
-time.sleep(1)
-print("4...")
-time.sleep(1)
-print("3...")
-time.sleep(1)
-print("2...")
-time.sleep(1)
-print("1...")
-time.sleep(1)
-print("GO! GO! GO! GOOOOOO!!!")
+start_init_timer(5)
 
 catches = 0
 while True:
@@ -69,6 +63,8 @@ while True:
     if is_catch:
         catches = catches + 1
         print("Catch:", catches)
+        # Sleep time must be greater than MC subtitle fade time
+        time.sleep(2.5)
 
     # Stop script when 'p' is pressed
     if keyboard.is_pressed("p"):
