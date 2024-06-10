@@ -15,12 +15,13 @@ To use this script, you will need to:
 - Download the [resource pack](./resource-pack/) and import it (Feel free to zip it if you want)
 - In game, select the resource pack and then change your in-game language to "Bionic Fisher Lang"
 - Make sure you have the [subtitles](https://minecraft.wiki/w/Subtitles) enabled in **Accessibility Settings**
-- Also make sure you do not have **Friendly Creatures** sounds muted in your **Sound Settings**
-- *Optionally: you can disable the transparency of the subtitle box for better results*
+- In **Accessibility Settings**, disable the transparency of the subtitle background (it should be full black)
+- Make sure you do not have **Friendly Creatures** sounds muted in your **Sound Settings**
 
 ## 📖 Usage
 
 - Launch Minecraft and make sure you have set your language properly
+- Join a world and stand in front of your fishing spot
 - Run the `main.py` script with root/admin privileges (required for the keyboard key press)
 - Quickly switch window focus to Minecraft and let it do the work
 - Enjoy an infinite supply of fish and treasure!
