@@ -7,13 +7,14 @@
             "y1": 1000,
             "y2": 2000
         },
-        "threshold": 10
+        "threshold": 10,
+        "cooldown": 2.5
     },
     "actions": {
         "clickPos": {
             "x": 0,
             "y": 0
         },
-        "clickDelay": 3.5
+        "clickDelay": 0.5
     }
 }
