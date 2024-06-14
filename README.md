@@ -11,7 +11,29 @@ To use this script, you will need to:
   - For `main.py`: [OpenCV](https://pypi.org/project/opencv-python/), [PyAutoGUI](https://pypi.org/project/PyAutoGUI/) and [keyboard](https://pypi.org/project/keyboard/)
   - For `setup.py`: [pynput](https://pypi.org/project/pynput/)
 - Run `setup.py` and perform two clicks to define the region of interest
-- Update `config.json` to use the newly defined ROI
+- Update `config.json` to use the newly defined ROI:
+```json
+{
+    "startTimer": 5,
+    "detection": {
+        "roi": {
+            "x1": 1000,
+            "x2": 2000,
+            "y1": 1000,
+            "y2": 2000
+        },
+        "threshold": 10,
+        "cooldown": 2.5
+    },
+    "actions": {
+        "clickPos": {
+            "x": 0,
+            "y": 0
+        },
+        "clickDelay": 0.5
+    }
+}
+```
 - Download the [resource pack](./resource-pack/) and import it (Feel free to zip it if you want)
 - In game, select the resource pack and then change your in-game language to "Bionic Fisher Lang"
 - Make sure you have the [subtitles](https://minecraft.wiki/w/Subtitles) enabled in **Accessibility Settings**
